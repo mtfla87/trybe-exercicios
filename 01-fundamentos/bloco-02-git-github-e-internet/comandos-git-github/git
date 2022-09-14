@@ -1,0 +1,68 @@
+# 3 conceitos principais
+Ramificação (branch) 
+captura de mudança (commit)
+mesclagem (merge)
+
+#Ramificação (branch)
+O seu projeto principal fica em uma branch, chamada brancha main (principal). A partir dela vc consegue criar outras branch, que possui uma versão da sua main principal (branch main), lá vc pode realizar modifcações sem medo, que não vai alterar o seu projeto principal (branch main), pois vc está na versão dela. 
+Obs: A branch main (principal) vai para a produção, ela fica acessível para os usuários.
+
+
+#git 
+Git funciona como linha do tempo, vc pode acessar todas versões do seu projeto, manipular e alterar arquivos. Criar e salvar varias versões do seu projeto, e caso acontece o imprevisto, vc pode acessar cada versão criada. E tbm possibilita trabalhar em grupo independente da distancia.
+
+#git init 
+pra vc inicializar o git dentro de um repositório dentro de uma pasta
+
+#git status 
+pra mostrar o que está acontecendo atualmente no nosso repositório
+
+#git add nome-arquivo
+vc vai preparar ele (adicionar) em uma area de stage (estágio) que vai preparar o arquivo pra eu criar uma versão.
+
+#git add . 
+vc adiciona todos os arquivos de uma vez só para área de stage (estágio) q vai preparar o arquivo p eu criar uma versão.
+
+#git commit -m "algo haver com o que vc modificou"
+quando você salva as alterações realizadas. É bom ter a descrição do que foi alterado.
+
+#git commit -am "algo haver com o que vc modificou"
+Adiciona e commita apenas arquivos modificados, e não criados
+
+#git merge nome-branch
+É quando vc quer atualizar a branch (versão) com a branch main (principal). Ou uma branch com outra branch. Esse precesso é chamado de merge, ela mescla (junta) os conteudo das branch
+
+#git checkout nome-branch
+É você se direcionar da branch q vc está para alguma outra.
+
+#git checkout -b nova-branch
+É você criar uma branch nova. Vc criando, já vai diretamente pra essa branch nova
+
+#git branch
+É pra vc verificar as branch que existem e qual branch vc está
+
+#git pull 
+Traz alterações do github para o local na branch q vc está
+
+#git push
+Envia alterações realizadas na branch atua (quando a branch q vc está, tbm esteja no remoto (github) 
+
+#git pull origin nome-branch
+Ele vai trazer as alterações que estão no GitHub (remota) para a branch atual q você está 
+
+#git push -u origin nome-branch
+envia as alterações realizadas da sua atual branch, para uma branch especifica que vc digitou
+
+#git log
+Mostra os historios dos commits
+
+#git remote -v
+Mostra o repositório atual
+
+#git clone
+ Clona/baixa/copia o repositório remoto (gitHub) para o local...
+
+
+
+
+
