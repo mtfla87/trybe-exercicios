@@ -1,0 +1,128 @@
+# cat > te permite colocar e substituir valores em um arquivo.
+ cat > arquivo.txt
+valor
+valor
+ # cat te permite abrir o arquivo com os valores.
+ cat arquivo.txt
+ valor
+ valor
+ # cat >> te permite adicionar e editar valores em um arquivo.
+ cat >> arquivo.txt
+ valor
+ valor
+ valor1
+ # cat te permite juntar valores de dois arquivos e enviar para um terceiro arquivo.
+ cat arquivos.txt arquivos2.txt > arquivos3.txt
+ arquivos3.txt
+ # ctl + D finaliza e salva o arquivo.
+ # sort < corex.txt  te permite ordenar valores em ordem alfabética na parte da visualização, sem alterar os valores dentro do arquivo.
+
+ # sort < cores.txt > coresOrdenadas.txt te permite ordenar o arquivo cores.txt e enviar essa ordenação para outro arquivo.
+ sort < nome-arquivo > nome-outro-arquivo Ele ordena o 1°arquivo em ordem alfabetica e dps manda pro 2°arquivo
+     
+     #whoo te mostra quem tem acesso ao terminal
+whoo mostra a lista de todos usuarios logados no sistema, e a hora que logou.
+# | (pipe) te permite juntar/enviar o output (entradas) de um comando para outro.
+ex: who | sort
+
+
+     
+     
+     #Permissões
+ls -l mostra diversas informações que o ls sozinho não mostra, além de mostrar diretórios e arquivos ele mostra as permissões.
+R vc tem o acesso de leitura do arquivo ou diretório
+w vc pode editar/escrever um arquivo ou modificar o conteudo do diretório
+X vc pode executar um arquivo ou acessar diretorio pelo comando CD
+- hifen  no inicio significa um arquivo comum de .txt
+D no inicio significa que é um diretório
+rwx significa que vc pode ler, escrever e executar
+rw significa que vc pode ler e escrever
+r significa que vc só pode ler
+
+ Permissões | Links  | Proprietário | Grupo | Tamanho | Data e Hora   | Nome
+  -----------|--------|--------------|-------|---------|---------------|---------
+  drwxr-xr-x | 2 	  | root 	     | root  | 4096    | Out 19 09:10  | composer/
+
+      #chmod
+
+chmod significa o tipo de permissão que quero altorizar 
+chmod u significa que vou permitir as alterações apenas para o usuario
+chmod g significa que vou permitir as alterações para todo o grupo
+chmod o significa que vou permitir as alterações para outros usuarios
+chmod a significa que vou permitir as alterações para todos os usuarios
+
+chomod  u- retirar alguma permissão
+chomod u+ acrescentar alguma permissão
+chomod u= deixar exatamente igual a permissão
+
+
+    
+    #PROCESSOS DENTRO DO UNIX
+
+Pid TTY PROCEE IDENTIFICADOR UNICO
+ps mostra todo o processo
+
+Sleep 5 cria um processo e meu terminal vai parar durante 5sg. Ou seja, tenho que esperar ele terminar todo o processo para eu continuar fazendo minhas atividades
+
+Sleep 10 & assim eu crio o processo e deixo em background, ou seja, enquanto aquele processo está sendo executado, posso fazer outras coisas. 
+
+Crtl Z eu suspendo meu processo
+eu posso tirar a suspensão do meu processo e colocar ele novamente em background usando o bg. 
+fg % numero da lista tbm tira  a suspensão do processo, porém ele não fica em background 
+
+jobs mostra todos os processos suspensos, processos sendo executado e qual o status dele
+
+pra eu encerrar um processo em andamento é usar Ctrl C, mas não encerra processo em background
+kill % numero da lista ou PID tbm finaliza o processo em background
+
+
+
+    #find, history e echo
+
+echo é ecoar alguma coisa ex: 'Eae, pessoal'  'Eae, pessoal'. Esse comando repete o q vc escreveu.
+
+#para lsita todos os arquivos que terminam em .txt
+find . -name '*.txt'
+
+#Para localizar todos os diretórios
+find . -type d
+
+#para localizar todos os arquivos
+flind . - type f
+
+#localizar tanto arquivos quanto diretórios que comecem por algum techo
+flind ./teste -name 'exemplo*'
+
+#resultado
+./teste/exemplo.txt
+./teste/exemplo
+
+# Localizar somente arquivos que comecem por algum trecho
+find ./teste -type f -name "exemplo*"
+
+# Resultado
+./teste/exemplo.txt
+
+# Localizar somente diretórios que comecem por algum trecho
+find ./teste -type d -name "exemplo*"
+
+# Resultado
+./teste/exemplo
+
+# Mostra o histórico de comandos
+history
+
+# Pegar os últimos 10 comandos
+history | tail
+
+echo "Este é um teste"
+# Resultado
+Este é um teste
+
+# Pode ser usado para colocar textos dentro de arquivos.
+echo "Este é mais um teste" > teste.txt
+cat teste.txt
+Este é mais um teste
+
+- find . -name "*.txt" lista todos os arquivos com a extensão .txt.
+- find ./teste -type f -name "exemplo*" lista todos os arquivos que comecem com a palavra "exemplo".
