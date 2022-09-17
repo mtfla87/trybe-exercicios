@@ -1,0 +1,107 @@
+# Esse comando mostra os diretórios e arquivos que existe dentro.
+ls nome-da-pasta
+
+# Mostra TODOS os diretórios e arquivos, oculto ou não (escondido ou não).
+ls -a nome-da-pasta 
+
+# Altera o diretório que vc tá. Se vc tiver no diretório X e quiser ir pro diretório Y, é só usar o comando cd
+cd nome-da-pasta
+
+# ele mostra exatamente o diretório (pasta) que estamos.
+cd . 
+
+# ele volta pro diretório (pasta) anterior
+cd ..
+
+# cria um novo arquivo
+touch
+
+# Esse comando cria um diretório (pasta) novo.
+mkdir
+
+# mostra o diretório completo, desde o começo.
+pwd
+
+# esse comando eu posso copiar um arquivo ou diretório e move-lo 
+cp 
+
+# abre o arquivo e mostra todo o conteúdo dele
+cat 
+
+# move (renomeia) um arquivo de um lugar para outro.
+mv 
+
+# você consegue apagar algum arquivo dentro de algum diretório
+rm 
+
+# Apaga diretórios (obs: ele só apaga diretórios vazios, ou seja, q não tem nenhum arquivo dentro)
+rmdir
+
+# apaga diretórios e arquivos que tiver dentro dele. Ou seja, apaga por completo
+rm -rf
+
+# abre o arquivo e mostra o conteúdo de forma diferente. Mostra o conteúdo por página, pra ir pra prox página é só apertar o barra. Quando não tiver mais conteudo vai aparecer no final (END). E pra sair da visualização é só apertar o Q.
+less 
+
+# mostra as dez primeiras linhas. 
+head
+
+# traz as cincos primeiras linhas.
+head -5
+
+# mostra as dez ultimas linhas. 
+tail
+
+# mostra as 5 ultimas linhas
+tail -5
+
+# permite fazer buscas dentro de arquivos, colocando o comando + o valor.
+grep
+
+# permite fazer buscar dentro de arquivos com letra minuscula e maiuscula.
+grep -i 
+
+# mostra  os valores que não correspondem com o valor da minha busca.
+grep -iv
+
+# mostra em que linha está o valor desejado na lista.
+grep -in
+
+# mostra quantas vezes é encontrado o valor na lista.
+grep -ic
+
+#  mostra a quantidades de linhas, palavras e letras que o valor tem.
+wc 
+
+# mostra a quantidade de palavras.
+wc -w
+
+# mostra a quantidade de linha.
+wc -l
+
+# mostra a quantidade de letras.
+wc-c 
+
+#CORINGA
+
+# Mostra o que está dentro do diretórios e subdiretórios sem precisar entrar um por um individualmente.
+ls *
+
+# mostrar a quantidade linha, quando vc quer filtrar alguma palavra
+-l
+
+#  ele consegue encontrar substituir uma letra para achar um valor.
+ls ?lamengo
+
+#COMANDOS Q TIRAM DUVIDAS
+
+# Serve pra nos lembrar o q cada comando faz, vc colocando o man + o comando ele nos diz a função de cada um, é um manual.
+man
+
+# ele tbm nos diz o que o comando faz.
+whatis
+
+# quando queremos fazer algo, copiar, mover ou excluir algo… ele nos mostra qual comando usar.
+apropos  
+
+
