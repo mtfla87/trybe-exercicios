@@ -1,0 +1,47 @@
+body {
+   background-color:blanchedalmond;
+}
+
+.titulo {
+    border-style:inset;
+    background-color: yellowgreen;
+    font-size: 50px;
+    
+}
+
+.tudo {
+    position: relative;
+    left: 820px;
+    top: 300px;
+
+    
+}
+
+.borda1 {
+    border-style:double;
+    background-color: green;
+    width: 230px;
+}
+
+.bordinfo {
+    border-style: double;
+    background-color: green;
+    width: 400px;
+}
+
+.atq {
+    border-style: double;
+    background-color: green;
+    width: 200px
+}
+
+.imagem {
+    position: relative;
+    bottom: 200px;
+    
+}
+
+.junto {
+    position: relative;
+    bottom: 100px;
+}
